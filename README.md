@@ -13,14 +13,12 @@ Bohan Jia<sup>1\*</sup>, Wenxuan Huang<sup>1,2\*</sup>, Yuntian Tang<sup>1\*</su
 
 *\* Equal contribution &nbsp;&nbsp; † Corresponding author*
 
-**CVPR 2026**
-
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://comp-bench.github.io/static/images/tasks/tasks-1.png" alt="CompBench Task Overview" width="90%">
+  <img src="https://comp-bench.github.io/static/images/tasks/tasks-1.png" alt="CompBench Task Overview" width="60%">
   <p><em>CompBench covers 9 editing tasks spanning 5 major categories, featuring fine-grained, complex instructions that challenge state-of-the-art image editing models.</em></p>
 </div>
 
