@@ -7,20 +7,22 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-green?logo=github&logoColor=white)](https://comp-bench.github.io/)
 [![HuggingFace Dataset](https://img.shields.io/badge/HuggingFace-Dataset-orange?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/BohanJia/CompBench)
 
-Bohan Jia<sup>1\*</sup>, Wenxuan Huang<sup>1,2\*</sup>, Yuntian Tang<sup>1\*</sup>, Junbo Qiao<sup>1</sup>, Jincheng Liao<sup>1</sup>, Shaosheng Cao<sup>3†</sup>, Fei Zhao<sup>3</sup>, Zhaopeng Feng<sup>4</sup>, Zhouhong Gu<sup>5</sup>, Zhenfei Yin<sup>6</sup>, Lei Bai<sup>7</sup>, Wanli Ouyang<sup>2</sup>, Lin Chen<sup>8</sup>, Fei Zhao<sup>9</sup>, Zihan Wang<sup>1</sup>, Yuan Xie<sup>1</sup>, Shaohui Lin<sup>1†</sup>
+Bohan Jia<sup>1\*</sup>, Wenxuan Huang<sup>1,4\*</sup>, Yuntian Tang<sup>1\*</sup>, Junbo Qiao<sup>1</sup>, Jincheng Liao<sup>1</sup>, Shaosheng Cao<sup>2†</sup>, Fei Zhao<sup>2</sup>, Zhaopeng Feng<sup>5</sup>, Zhouhong Gu<sup>6</sup>, Zhenfei Yin<sup>7</sup>, Lei Bai<sup>8</sup>, Wanli Ouyang<sup>4</sup>, Lin Chen<sup>9</sup>, Fei Zhao<sup>10</sup>, Yao Hu<sup>2</sup>, Zihan Wang<sup>1</sup>, Yuan Xie<sup>1</sup>, Shaohui Lin<sup>1,3†</sup>
 
-<sup>1</sup>East China Normal University &nbsp; <sup>2</sup>The Chinese University of Hong Kong &nbsp; <sup>3</sup>Xiaohongshu Inc. &nbsp; <sup>4</sup>Zhejiang University &nbsp; <sup>5</sup>Fudan University &nbsp; <sup>6</sup>University of Oxford &nbsp; <sup>7</sup>Shanghai Jiao Tong University &nbsp; <sup>8</sup>University of Science and Technology of China &nbsp; <sup>9</sup>Nanjing University
+<sup>1</sup>East China Normal University &nbsp; <sup>2</sup>Xiaohongshu Inc. &nbsp; <sup>3</sup>KLATASDS-MOE &nbsp; <sup>4</sup>The Chinese University of Hong Kong &nbsp; <sup>5</sup>Zhejiang University &nbsp; <sup>6</sup>Fudan University &nbsp; <sup>7</sup>University of Oxford &nbsp; <sup>8</sup>Shanghai Jiao Tong University &nbsp; <sup>9</sup>University of Science and Technology of China &nbsp; <sup>10</sup>Nanjing University
 
 *\* Equal contribution &nbsp;&nbsp; † Corresponding author*
 
 </div>
 
+---
 
 <div align="center">
   <img src="https://comp-bench.github.io/static/images/tasks/tasks-1.png" alt="CompBench Task Overview" width="60%">
   <p><em>CompBench covers 9 editing tasks spanning 5 major categories, featuring fine-grained, complex instructions that challenge state-of-the-art image editing models.</em></p>
 </div>
 
+---
 
 ## News
 
@@ -29,6 +31,7 @@ Bohan Jia<sup>1\*</sup>, Wenxuan Huang<sup>1,2\*</sup>, Yuntian Tang<sup>1\*</su
 - **[2025-05]** Dataset released on [HuggingFace](https://huggingface.co/datasets/BohanJia/CompBench).
 - **[2025-05]** Project page live at [comp-bench.github.io](https://comp-bench.github.io/).
 
+---
 
 ## Abstract
 
@@ -43,6 +46,7 @@ Extensive evaluations reveal that CompBench exposes fundamental limitations of c
   <p><em>Overview of the MLLM-human collaborative data construction pipeline.</em></p>
 </div>
 
+---
 
 ## Task Categories
 
@@ -66,6 +70,7 @@ CompBench organizes editing into **5 major categories** covering **9 distinct ta
   <p><em>Examples of local editing tasks (removal, addition, replacement).</em></p>
 </div>
 
+---
 
 ## Dataset Statistics
 
@@ -81,6 +86,7 @@ CompBench organizes editing into **5 major categories** covering **9 distinct ta
 
 The high occlusion and out-of-frame rates reflect the real-world complexity of CompBench scenes, making it significantly more challenging than prior benchmarks.
 
+---
 
 ## Evaluation Metrics
 
@@ -94,6 +100,7 @@ CompBench uses a suite of complementary metrics to capture both editing quality 
 | **SSIM** | Structural Similarity Index | Structural fidelity of background |
 | **LPIPS** | Learned Perceptual Image Patch Similarity | Perceptual background consistency |
 
+---
 
 ## Leaderboard
 
@@ -119,6 +126,7 @@ CompBench evaluates 15+ models spanning the full spectrum of instruction-guided 
   <p><em>Qualitative comparison of editing results across models on representative CompBench samples.</em></p>
 </div>
 
+---
 
 ## Installation
 
@@ -134,6 +142,7 @@ pip install torch torchvision
 pip install torchmetrics[multimodal] transformers pillow tqdm pandas numpy
 ```
 
+---
 
 ## Quick Start
 
@@ -199,6 +208,7 @@ See [`eval_all.sh`](eval_all.sh) for a concrete example with multiple models and
 | `--output_dir` | Directory to save evaluation outputs | `./eval_results` |
 | `--resume` | Skip already-evaluated samples | flag |
 
+---
 
 ## Dataset Management
 
@@ -218,6 +228,7 @@ python update_hf_dataset.py
 
 Syncs local metadata changes back to the HuggingFace dataset repository. Useful for maintainers contributing new annotations or corrections.
 
+---
 
 ## Repository Structure
 
@@ -236,6 +247,7 @@ CompBench/
 └── update_hf_dataset.py      # Sync local metadata to HuggingFace
 ```
 
+---
 
 ## Citation
 
@@ -250,11 +262,13 @@ If you find CompBench useful in your research, please consider citing:
 }
 ```
 
+---
 
 ## Contact
 
 For questions or feedback, please open an issue on [GitHub](https://github.com/BhJia/CompBench/issues) or reach out via the [project page](https://comp-bench.github.io/).
 
+---
 
 <div align="center">
   <sub>CompBench is accepted to CVPR 2026. &nbsp;|&nbsp; <a href="https://arxiv.org/abs/2505.12200">Paper</a> &nbsp;|&nbsp; <a href="https://comp-bench.github.io/">Project Page</a> &nbsp;|&nbsp; <a href="https://huggingface.co/datasets/BohanJia/CompBench">Dataset</a></sub>
