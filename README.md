@@ -1,6 +1,6 @@
 <div align="center">
 
-# CompBench: Benchmarking Complex Instruction-guided Image Editing
+# [CVPR 26] CompBench: Benchmarking Complex Instruction-guided Image Editing
 
 [![Paper](https://img.shields.io/badge/arXiv-2505.12200-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.12200)
 [![CVPR 2026](https://img.shields.io/badge/CVPR-2026-4b44ce?logo=opencv&logoColor=white)](https://cvpr.thecvf.com/)
@@ -20,7 +20,7 @@ Bohan Jia<sup>1\*</sup>, Wenxuan Huang<sup>1,2\*</sup>, Yuntian Tang<sup>1\*</su
 ---
 
 <div align="center">
-  <img src="https://comp-bench.github.io/static/images/tasks-1.png" alt="CompBench Task Overview" width="90%">
+  <img src="https://comp-bench.github.io/static/images/tasks/tasks-1.png" alt="CompBench Task Overview" width="90%">
   <p><em>CompBench covers 9 editing tasks spanning 5 major categories, featuring fine-grained, complex instructions that challenge state-of-the-art image editing models.</em></p>
 </div>
 
@@ -44,7 +44,7 @@ CompBench features challenging editing scenarios that incorporate **fine-grained
 Extensive evaluations reveal that CompBench exposes fundamental limitations of current image editing models and provides critical insights for next-generation instruction-guided image editing.
 
 <div align="center">
-  <img src="https://comp-bench.github.io/static/images/Overall-1.png" alt="CompBench Pipeline" width="85%">
+  <img src="https://comp-bench.github.io/static/images/Overall/Overall.jpg" alt="CompBench Pipeline" width="85%">
   <p><em>Overview of the MLLM-human collaborative data construction pipeline.</em></p>
 </div>
 
