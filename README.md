@@ -7,13 +7,13 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-green?logo=github&logoColor=white)](https://comp-bench.github.io/)
 [![HuggingFace Dataset](https://img.shields.io/badge/HuggingFace-Dataset-orange?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/BohanJia/CompBench)
 
-**Bohan Jia\*, Wenxuan Huang\*, Yuntian Tang\*, Junbo Qiao, Jincheng Liao, Shaosheng Cao†, Fei Zhao,**
-**Zhaopeng Feng, Zhouhong Gu, Zhenfei Yin, Lei Bai, Wanli Ouyang, Lin Chen, Yao Hu,**
-**Zihan Wang, Yuan Xie, Shaohui Lin†**
+Bohan Jia<sup>1\*</sup>, Wenxuan Huang<sup>1,2\*</sup>, Yuntian Tang<sup>1\*</sup>, Junbo Qiao<sup>1</sup>, Jincheng Liao<sup>1</sup>, Shaosheng Cao<sup>3†</sup>, Fei Zhao<sup>3</sup>, Zhaopeng Feng<sup>4</sup>, Zhouhong Gu<sup>5</sup>, Zhenfei Yin<sup>6</sup>, Lei Bai<sup>7</sup>, Wanli Ouyang<sup>2</sup>, Lin Chen<sup>8</sup>, Fei Zhao<sup>9</sup>, Zihan Wang<sup>1</sup>, Yuan Xie<sup>1</sup>, Shaohui Lin<sup>1†</sup>
+
+<sup>1</sup>East China Normal University &nbsp; <sup>2</sup>The Chinese University of Hong Kong &nbsp; <sup>3</sup>Xiaohongshu Inc. &nbsp; <sup>4</sup>Zhejiang University &nbsp; <sup>5</sup>Fudan University &nbsp; <sup>6</sup>University of Oxford &nbsp; <sup>7</sup>Shanghai Jiao Tong University &nbsp; <sup>8</sup>University of Science and Technology of China &nbsp; <sup>9</sup>Nanjing University
 
 *\* Equal contribution &nbsp;&nbsp; † Corresponding author*
 
-*East China Normal University · Xiaohongshu Inc. · CUHK · Zhejiang University · Fudan University · University of Oxford · SJTU · USTC · Nanjing University*
+**CVPR 2026**
 
 </div>
 
@@ -121,7 +121,7 @@ CompBench uses a suite of complementary metrics to capture both editing quality 
   <p><em>SSIM comparison bubble chart across evaluated models.</em></p>
 </div>
 
-CompBench evaluates 15+ models spanning the full spectrum of instruction-guided image editing, from early approaches (InstructPix2Pix) to the latest generation (FLUX.1 Kontext, Bagel, Qwen-Image-Edit). Results demonstrate that even state-of-the-art models struggle with complex, fine-grained editing instructions, highlighting the benchmark's discriminative power.
+CompBench evaluates 15+ models spanning the full spectrum of instruction-guided image editing, from early approaches (InstructPix2pix) to the latest generation (FLUX.1 Kontext, Bagel, Qwen-Image-Edit). Results demonstrate that even state-of-the-art models struggle with complex, fine-grained editing instructions, highlighting the benchmark's discriminative power.
 
 <div align="center">
   <img src="https://comp-bench.github.io/static/images/Comparison.jpg" alt="Qualitative Comparison" width="90%">
@@ -136,8 +136,8 @@ CompBench evaluates 15+ models spanning the full spectrum of instruction-guided 
 
 ```bash
 # Clone the repository
-git clone https://github.com/BhJia/ComBench.git
-cd ComBench
+git clone https://github.com/BhJia/CompBench.git
+cd CompBench
 
 # Install dependencies
 pip install torch torchvision
@@ -256,14 +256,11 @@ CompBench/
 If you find CompBench useful in your research, please consider citing:
 
 ```bibtex
-@inproceedings{jia2026compbench,
-  title={CompBench: Benchmarking Complex Instruction-guided Image Editing},
-  author={Jia, Bohan and Huang, Wenxuan and Tang, Yuntian and Qiao, Junbo and Liao, Jincheng
-          and Cao, Shaosheng and Zhao, Fei and Feng, Zhaopeng and Gu, Zhouhong and Yin, Zhenfei
-          and Bai, Lei and Ouyang, Wanli and Chen, Lin and Hu, Yao and Wang, Zihan
-          and Xie, Yuan and Lin, Shaohui},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2026}
+@article{jia2025compbench,
+  title={Compbench: Benchmarking complex instruction-guided image editing},
+  author={Jia, Bohan and Huang, Wenxuan and Tang, Yuntian and Qiao, Junbo and Liao, Jincheng and Cao, Shaosheng and Zhao, Fei and Feng, Zhaopeng and Gu, Zhouhong and Yin, Zhenfei and others},
+  journal={arXiv preprint arXiv:2505.12200},
+  year={2025}
 }
 ```
 
@@ -271,7 +268,7 @@ If you find CompBench useful in your research, please consider citing:
 
 ## Contact
 
-For questions or feedback, please open an issue on [GitHub](https://github.com/BhJia/ComBench/issues) or reach out via the [project page](https://comp-bench.github.io/).
+For questions or feedback, please open an issue on [GitHub](https://github.com/BhJia/CompBench/issues) or reach out via the [project page](https://comp-bench.github.io/).
 
 ---
 
